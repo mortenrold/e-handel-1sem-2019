@@ -1,0 +1,64 @@
+<!doctype html> <!-- definerer dokumentet som en bestemt version af HTML. I dette tilfælde HTML5 -->
+<html lang="da"> <!-- lang="da" fortæller browseren, at siden er på dansk -->
+    <head>
+        <title>Min første side</title>
+        <meta charset="utf-8"> <!-- meta-tags er små "beskeder" til browseren med info, som ikke skal vises på skærmen -->
+        <meta description="Dette er den fedeste side om katte i hele landet."> <!-- Den lille grå tekst, der bliver vist i søgeresultatet -->
+    </head>
+    <body>
+        <h1>Min første side</h1>
+        <p>Her kommer lidt tekst som <b>jeg</b> selv har fundet på.</p>
+        <p>Et andet tekstafsnit <br>med noget mere tekst.</p>
+        <ul> <!-- "unordered list" med fire punkter -->
+            <li>Kat</li>
+            <li>Hund</li>
+            <li>Gris</li>
+            <li>Hest</li>
+        </ul>
+        <h2>En mindre overskrift</h2>
+        <a href="side-2.html"><img src="images/kat.jpg" alt="Sød kat" width="400"></a> <!-- dette img-tag har 3 atributter ("src", "alt" og "width"). Atributter er små egenskaber ved et tag -->
+        <br><a href="http://cphbusiness.dk" target="_blank">Link til Cphbusiness</a>
+        <br><a href="side-2.html">Link til min egen side 2</a>
+        <table border="1">
+            <tr>
+                <th>Mandag</th>
+                <th>Tirsdag</th>
+            </tr>
+            <tr>
+                <td>Billedkunst</td>
+                <td>Idræt</td>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>Madkundskab</td>
+            </tr>
+        </table>
+        <br>
+        <form>
+            <p>Fornavn</p>
+            <input type="text" name="fornavn" required placeholder="Skriv dit navn her...">
+            <p>Kommentarer</p>
+            <textarea cols="30" rows="6" name="comments"></textarea>
+            <p>Køn</p>
+            <input type="radio" name="kon" value="kvinde">Kvinde
+            <input type="radio" name="kon" value="mand">Mand
+            <p>Interesser</p>
+            <input type="checkbox" name="interesser" value="fodbold">Fodbold
+            <input type="checkbox" name="interesser" value="musik">Musik
+            <input type="checkbox" name="interesser" value="film">Film
+            <p>Antal børn</p>
+            <select name="antal-born">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="x">Flere</option>
+            </select>
+            <p>Din email</p>
+            <input type="email" name="email">
+            <input type="submit" value="Send afsted">
+        </form>
+    </body>
+</html>
