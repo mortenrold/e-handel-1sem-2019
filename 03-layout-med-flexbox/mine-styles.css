@@ -1,0 +1,43 @@
+body {
+    background-color: #c8d5ed;
+}
+#container {
+    display: flex;
+    justify-content: space-around; /* fordeler #container's "børn" vandret */
+    flex-wrap: wrap;
+}
+.main-content {
+    width: 70%;
+}
+h1, p {
+    font-family: helvetica, arial, sans-serif;    
+}
+h1 {
+    font-weight: 100;
+    border: 1px dotted black;
+    /* display: inline;  her laver vi h1 om til et inline-element - før var den et block-element */
+    padding: 50px;
+}
+#overskrift-2 {
+    color: #999;
+}
+.dyr-med-ben {
+    color: green;
+}
+.dyr-uden-ben {
+    color: purple;
+}
+p {
+    line-height: 145%;
+}
+a {
+    color: orange;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: none;
+    background-color: white;
+}
+a:active {
+    color: red;
+}
