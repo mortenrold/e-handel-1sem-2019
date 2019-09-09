@@ -1,0 +1,41 @@
+#container {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.blaa {
+    background-color: lightblue;
+    padding: 10px 0px 10px 0px; /* padding på fire sider: top-right-bottom-left */
+    margin: 0px;
+    width: 100%;
+}
+h1 {
+    color: white;
+    font-family: merriweather, arial, helvetica, sans-serif;
+}
+p {
+    font-family: merriweather, serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+iframe {
+    margin-top: 30px;
+    border: 2px dashed red;
+}
+
+/* særlige styles for skærme over 602px i bredden. Dette kaldes en "media query". I dette tilfæde har vores media query et "breakpoint" ved 692px */
+@media screen and (min-width: 692px) {
+    .text, .image {
+        width: 50%;
+    }
+}
+
+/* særlige styles for skærme over 1000px i bredden */
+@media screen and (min-width: 1000px) {
+    .text, .image, .headline {
+        width: 33.3333333%;
+    } 
+}
